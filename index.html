@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/font-awesome.min.css">
+  <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+  <link rel="stylesheet" href="assets/scss/style.css">
+  <title>JavaScript To Do List</title>
+</head>
+
+<body>
+  <section class="sectionHeading">
+    <div class="container">
+      <h1>To Do List</h1>
+    </div>
+  </section>
+
+  <article>
+    <div class="container">
+      <section class="listArea">
+        <div class="taskArea">
+          <input type="text" id="taskInput" placeholder="Task...">
+          <button onclick="addTask()" id="addTaskButton">Add Task</button>
+          <button onclick="updateTask()" id="updateTaskButton">Update Task</button>
+          <button onclick="clearField()" id="clearField">Clear Field</button>
+          <button onclick="listSort()" id="sortButton">Sort List</button>
+          <button onclick="clearList()" id="clearListButton">Clear List</button>
+          <input type="text" id="taskSearch" onkeyup="searchTask()" placeholder="Search Task...">
+       
+        </div>
+      </section>
+      <section class="tasksListArea">
+        <ul id="todoUL">
+          <li> <span class="taskTxt">Declutter Emails</span>
+          </li>
+          <li><span class="taskTxt">Reduce items from phone memory</span>
+          </li>
+          <li><span class="taskTxt">Vechicles Maintainance </span>
+          </li>
+          <li><span class="taskTxt">Social Media Detox</span>
+          </li>
+          <li><span class="taskTxt">Track Calories Intake</span>
+
+          </li>
+        </ul>
+      </section>
+  </article>
+  <script src="assets/js/app.js"></script>
+</body>
+
+</html>

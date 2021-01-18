@@ -1,0 +1,97 @@
+* { border:none; padding:0; margin:0; list-style: none;}
+
+@import url('https://fonts.googleapis.com/css2?family=Castoro&display=swap');
+
+/*Variables*/
+$blue: #143091;
+$black: #303030;
+$white: #fff;
+$pink: #f64c72;
+$grey: #ccc;
+$primary-font:'Roboto', sans-serif;
+
+body {
+  font-family: $primary-font;
+}
+
+.bannerImage { position: relative;
+   .item {position: fixed; z-index: -1; width:100%;
+     img {width:100%; height: auto;} 
+     }
+}
+
+.sectionHeading { padding:50px 0; text-align:center; margin:70px 0 0; display: inline-block; width: 100%;
+   h1 {color:$black;}
+}
+
+.mainFeatArea { position: relative;}
+
+.listArea { width: 480px; margin:0 auto; text-align: center; }
+
+ul li.checked {
+  background: #888;
+  color: #fff;
+  text-decoration: line-through;
+}
+
+ul li.checked::before {
+  content: '';
+  position: absolute;
+  border-color: #fff;
+  border-style: solid;
+  border-width: 0 2px 2px 0;
+  top: 10px;
+  left: 16px;
+  transform: rotate(45deg);
+  height: 15px;
+  width: 7px;
+}
+
+.tasksListArea { width: 480px; margin:25px auto 0; 
+  li { margin-bottom:15px; padding:7px 10px; }
+}
+
+.taskArea {
+  input[type="text"] {
+    padding:10px 15px; width:100%; margin-bottom:25px; display: inline-block; border:1px solid #ccc;
+    &:active {border:none;}    
+  }
+  input[type="submit"] {border: none; color:$black; padding: 10px 25px; text-align: center; text-decoration: none; display: inline-block; transition-duration: 0.4s; margin-bottom:15px;
+    
+    &:hover {background-color: $pink; color:$white;}
+    &:focus {outline:none;}
+  }
+  button {border: none; color:$black; padding: 10px 25px; text-align: center; text-decoration: none; display: inline-block; transition-duration: 0.4s; margin-bottom:15px; background:$grey;
+  
+     &:hover {background-color: $pink; color:$white;}
+     &:focus {outline:none;}
+  
+  }
+  h3 { color:$white;}
+  h5 { color:$pink; }
+}
+
+.taskNotes { margin:75px 0 0; color:$white;
+
+li {position:relative; padding-left: 21px; margin-bottom:10px;
+   &::before {content: "\f0c8"; font-family: FontAwesome; font-size: 10px; position: absolute; left: 0; top: 5px;
+  color:$pink; }
+  }
+}
+
+.close {cursor: pointer;}
+.edit { float:right; padding-right: 15px; cursor:pointer;}
+
+button {
+  &:disabled{
+    &:hover { background:$grey; color:#000;}
+  }
+} 
+
+.date { padding-left:10px;}
+
+
+
+
+
+
